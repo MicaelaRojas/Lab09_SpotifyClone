@@ -68,7 +68,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tiz-1N-qez">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tiz-1N-qez">
                                 <rect key="frame" x="20" y="44" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="pRT-d0-7nF"/>
@@ -86,21 +86,21 @@
                                 <color key="backgroundColor" name="darkColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="HeM-lg-N11" detailTextLabel="MIm-oy-r37" style="IBUITableViewCellStyleSubtitle" id="9ah-vG-Nug">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ah-vG-Nug" id="rMV-fd-7J6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HeM-lg-N11">
-                                                    <rect key="frame" x="20" y="7" width="30" height="17"/>
+                                                    <rect key="frame" x="20" y="6.5" width="30" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MIm-oy-r37">
-                                                    <rect key="frame" x="20" y="24" width="44" height="14.5"/>
+                                                    <rect key="frame" x="20" y="26" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,12 +116,14 @@
                         <viewLayoutGuide key="safeArea" id="I4g-In-TTT"/>
                         <color key="backgroundColor" name="darkColor"/>
                         <constraints>
+                            <constraint firstItem="tiz-1N-qez" firstAttribute="top" secondItem="I4g-In-TTT" secondAttribute="top" id="4ib-SY-SO8"/>
                             <constraint firstItem="rXV-A6-XR5" firstAttribute="leading" secondItem="I4g-In-TTT" secondAttribute="leading" id="58I-fz-7V6"/>
                             <constraint firstItem="sp9-e4-ooH" firstAttribute="top" secondItem="I4g-In-TTT" secondAttribute="top" constant="10" id="DAf-Vz-URc"/>
                             <constraint firstItem="I4g-In-TTT" firstAttribute="bottom" secondItem="rXV-A6-XR5" secondAttribute="bottom" id="Hcp-1N-j5Y"/>
                             <constraint firstItem="tiz-1N-qez" firstAttribute="top" secondItem="I4g-In-TTT" secondAttribute="top" id="U4p-Vo-eLg"/>
                             <constraint firstItem="I4g-In-TTT" firstAttribute="trailing" secondItem="sp9-e4-ooH" secondAttribute="trailing" constant="20" id="UZx-cw-3iv"/>
                             <constraint firstItem="sp9-e4-ooH" firstAttribute="leading" secondItem="tiz-1N-qez" secondAttribute="trailing" constant="26" id="dCw-PJ-23F"/>
+                            <constraint firstItem="tiz-1N-qez" firstAttribute="leading" secondItem="I4g-In-TTT" secondAttribute="leading" constant="20" id="jAO-a3-6Tl"/>
                             <constraint firstItem="rXV-A6-XR5" firstAttribute="top" secondItem="tiz-1N-qez" secondAttribute="bottom" constant="30" id="ksr-uc-uIg"/>
                             <constraint firstItem="tiz-1N-qez" firstAttribute="leading" secondItem="I4g-In-TTT" secondAttribute="leading" constant="20" id="rYk-9a-o4U"/>
                             <constraint firstItem="I4g-In-TTT" firstAttribute="trailing" secondItem="rXV-A6-XR5" secondAttribute="trailing" id="uho-d1-p7X"/>
@@ -141,9 +143,10 @@
     <resources>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="logo" width="163" height="161"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="darkColor">
-            <color red="0.10980392156862745" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

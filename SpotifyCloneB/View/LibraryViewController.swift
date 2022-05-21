@@ -36,6 +36,7 @@ class LibraryViewController: UIViewController {
     
     func setUpView() {
         imageProfile.image = HelperImage.setImageFromUrl(url: HelperString.imageProfileLink)
+        
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width / 2
     }
 
